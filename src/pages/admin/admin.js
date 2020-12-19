@@ -1,7 +1,14 @@
 import React ,{Component} from 'react'
 import { Layout } from 'antd'
-import {BrowserRouter,Route,Switch} from 'react-router-dom'
-import Welcome from './../Content/welcome'
+import {Route,Switch} from 'react-router-dom'
+import Home from './../home/home'
+import Category from './../category/category'
+import Product from '../product/product'
+import Bar from '../charts/bar'
+import Line from '../charts/line'
+import Pie from '../charts/pie'
+import Role from '../role/role'
+import User from '../user/user'
 const { Header, Sider, Content } = Layout
 export default class Admin extends Component{
     render() {
@@ -20,11 +27,16 @@ export default class Admin extends Component{
                             color:'white'
                         }}>标头</Header>
                         <Content>
-                            <BrowserRouter>
                                 <Switch>
-                                    <Route path='/welcome' component={Welcome}></Route>
+                                    <Route path='/home' component={Home} />
+                                    <Route path='/category' component={Category}/>
+                                    <Route path='/product' component={Product}/>
+                                    <Route path='/role' component={Role} />
+                                    <Route path='/user' component={User} />
+                                    <Route path='/charts/bar' component={Bar} />
+                                    <Route path='/charts/line' component={Line} />
+                                    <Route path='/charts/pie' component={Pie} />
                                 </Switch>
-                            </BrowserRouter>
                         </Content>
                     </Layout>
                 </Layout>

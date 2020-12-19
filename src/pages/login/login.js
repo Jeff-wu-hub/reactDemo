@@ -1,6 +1,6 @@
 import './login.css'
 import React from "react";
-import { Form, Input, Button, Checkbox } from 'antd';
+import { Button } from 'antd';
 
 export default class Login extends React.Component{
     click = function(){
