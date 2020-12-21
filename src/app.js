@@ -1,10 +1,16 @@
 import React, { Component } from 'react'
-import Router from 'react-router-dom'
-import renderRoutes from 'react-router-config'
+import Login from './pages/login/login'
+import Layout from './pages/layout/layout'
+import {BrowserRouter,Switch,Route} from 'react-router-dom'
 export default class App extends Component {
     render() {
         return (
-            <h1>1</h1>
+            <BrowserRouter>
+                <Switch>
+                    <Route exact path='/' component={Login}/>
+                    <Route path='/layout' component={Layout}/>
+                </Switch>
+            </BrowserRouter>
         )
     }
 }
