@@ -1,0 +1,44 @@
+.contentMain{
+    background-color: blueviolet;
+    width:100%;
+    height:100%;
+}
+.Head{
+    width:100%;
+    color: antiquewhite;
+    font-size:40px;
+    text-align: center;
+    margin: 10% 0 10% 0;
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    margin-top:10%;
+    width: 30%;
+    height: 50%;
+    background-color: rgba(67, 67, 177, 0.76);
+    margin-left: 80%;
+    transform: translate(-80%);
+    border-radius:10px;
+    box-shadow:10px 10px 15px rgba(0, 0, 0, 0.41);
+}
+
+.inputForm{
+    margin-top:3%;
+    width: 80%;
+    height:40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ant-input-lg{
+    text-indent: 30px !important;
+}
+.btn{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+}
